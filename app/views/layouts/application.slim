@@ -4,13 +4,26 @@ html lang="en"
     meta name="viewport" content="width=device-width, initial-scale=1.0"
 
     title = content_for?(:title) ? yield(:title) : "Cogswell Family Association"
+    link rel="shortcut icon" href="/favicon.ico"
 
+    = stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Domine:400,700"
+    = stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700"
     = stylesheet_link_tag    "application", "data-turbolinks-track" => true
     = javascript_include_tag "vendor/modernizr", "data-turbolinks-track" => true
+    = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
 
   body
     = render "nav"
-
     = yield
-    = javascript_include_tag "application", "data-turbolinks-track" => true
+
+  footer
+    div.row
+      ul.inline-list
+        li = link_to "Blog", "http://cogswellfam.wordpress.com/"
+        li = link_to "The Cogswells in America", "https://archive.org/details/cogswellsinameri00jame"
+        li = link_to "Descendants of John Cogswell", controller: :books, action: :john_cogswell
+        li = link_to "Association"
+        li = link_to "Board Memebers"
+        li = link_to "Bylaws"
+        li = link_to "Cogswells in History"

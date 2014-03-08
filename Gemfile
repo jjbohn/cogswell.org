@@ -21,4 +21,6 @@ end
 
 group :development do
   gem 'guard-livereload', require: false
+  gem 'binding_of_caller'
+  gem 'better_errors'
 end

@@ -20,7 +20,7 @@
 // Since the typical default browser font-size is 16px, that makes the calculation for grid size.
 // If you want your base font-size to be different and not have it affect the grid breakpoints,
 // set $rem-base to $base-font-size and make sure $base-font-size is a px value.
-// $base-font-size: 100%
+$base-font-size: 105%
 
 // The $base-line-height is 100% while $base-font-size is 150%
 // $base-line-height: 150%
@@ -42,7 +42,7 @@
 // We use these to control various global styles
 $body-bg: #fff
 // $body-font-color: #222
-// $body-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif
+$body-font-family: Domnie, serif
 // $body-font-weight: normal
 // $body-font-style: normal
 
@@ -55,7 +55,7 @@ $body-bg: #fff
 // $default-float: left
 
 // We use these as default colors throughout
-// $primary-color: #008CBA
+$primary-color: #445708
 // $secondary-color: #e7e7e7
 // $alert-color: #f04124
 // $success-color: #43AC6A
@@ -114,11 +114,12 @@ $body-bg: #fff
 // TYPOGRAPHY
 //
 
+
 // $include-html-type-classes: $include-html-classes
 
 // We use these to control header font styles
-// $header-font-family: $body-font-family
-// $header-font-weight: normal
+$header-font-family: 'Libre Baskerville', serif
+$header-font-weight: bold
 // $header-font-style: normal
 // $header-font-color: #222
 // $header-line-height: 1.4
@@ -1144,7 +1145,7 @@ $topbar-dropdown-link-color: #445708
 $topbar-dropdown-link-bg: #e1e6aa
 // $topbar-dropdown-link-weight: normal
 // $topbar-dropdown-toggle-size: 5px
-// $topbar-dropdown-toggle-color: #fff
+$topbar-dropdown-toggle-color: $topbar-dropdown-link-color
 // $topbar-dropdown-toggle-alpha: 0.4
 
 // Set the link colors and styles for top-level nav
@@ -1158,7 +1159,7 @@ $topbar-link-weight: bold
 $topbar-link-bg-hover: #e1e6aa
 // $topbar-link-bg-active: $primary-color
 $topbar-link-bg-active-hover: #e1e6aa
-// $topbar-link-font-family: $body-font-family
+$topbar-link-font-family: "Helvetica Neue", "Helvetica", Helvetica, Arial, sans-serif
 // $topbar-link-text-transform: none
 // $topbar-link-padding: $topbar-height / 3
 
