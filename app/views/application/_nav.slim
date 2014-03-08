@@ -11,8 +11,8 @@ nav.top-bar data-topbar=""
       li.has-dropdown
         = link_to "Books"
         ul.dropdown
-          li = link_to "The Cogswells in America", "https://archive.org/details/cogswellsinameri00jame"
           li = link_to "Descendants of John Cogswell", controller: :books, action: :john_cogswell
+          li = link_to "The Cogswells in America", "https://archive.org/details/cogswellsinameri00jame", target: "blank"
       li.has-dropdown
         = link_to "Association"
         ul.dropdown
@@ -22,9 +22,9 @@ nav.top-bar data-topbar=""
       li.has-dropdown
         = link_to "Links"
         ul.dropdown
-          li = link_to "Cogswell Polytechnical College", "http://www.cogswell.edu/"
-          li = link_to "Descendants of John Waite Cogswell", "http://www.celticweb.com/users/katiesanders/index.asp"
-          li = link_to "Research by Steve Aberle", "http://www.research.cogswell.org/"
+          li = link_to "Cogswell Polytechnical College", "http://www.cogswell.edu/", target: "blank"
+          li = link_to "Descendants of John Waite Cogswell", "http://www.celticweb.com/users/katiesanders/index.asp", target: "blank"
+          li = link_to "Research by Steve Aberle", "http://www.research.cogswell.org/", target: "blank"
 
     ul.right
       li = link_to "Sign in"
