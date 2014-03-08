@@ -13,6 +13,7 @@ gem 'coffee-rails',     '~> 4.0'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'slim'
+gem 'rails_12factor'
 
 group :development, :test do
   gem 'debugger'
