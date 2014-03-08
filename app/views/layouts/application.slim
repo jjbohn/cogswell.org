@@ -10,7 +10,6 @@ html lang="en"
     = stylesheet_link_tag    "http://fonts.googleapis.com/css?family=Libre+Baskerville:400,700"
     = stylesheet_link_tag    "application", "data-turbolinks-track" => true
     = javascript_include_tag "vendor/modernizr", "data-turbolinks-track" => true
-    = javascript_include_tag "application", "data-turbolinks-track" => true
     = csrf_meta_tags
 
   body
@@ -27,3 +26,4 @@ html lang="en"
         li = link_to "Board Memebers"
         li = link_to "Bylaws"
         li = link_to "Cogswells in History"
+  = javascript_include_tag "application", "data-turbolinks-track" => true
