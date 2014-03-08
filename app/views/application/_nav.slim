@@ -1,0 +1,29 @@
+nav.top-bar data-topbar=""
+  ul.title-area
+    li.name
+      h1
+        = link_to "Cogswell Family Association", root_path
+    li.toggle-topbar.menu-icon
+      a href="#"  Menu
+  section.top-bar-section
+    ul.left
+      li = link_to "News"
+      li = link_to "Blog"
+      li.has-dropdown
+        = link_to "Books"
+        ul.dropdown
+          li = link_to "The Cogswells in America"
+          li = link_to "Descendants of John Cogswell"
+      li.has-dropdown
+        = link_to "Association"
+        ul.dropdown
+          li = link_to "Board Memebers"
+          li = link_to "Bylaws"
+          li = link_to "Join"
+      li = link_to "Cogswells in History"
+      li = link_to "Links"
+
+    ul.right
+      li = link_to "Sign in"
+      li = link_to "Join"
+
